@@ -1,0 +1,7 @@
+services:
+  debugger-test:
+    build:
+      context: ../..
+      dockerfile: tests/debugger/Dockerfile
+    environment:
+      - NODE_ENV=test

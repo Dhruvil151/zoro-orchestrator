@@ -1,0 +1,26 @@
+{
+  "name": "zoro-orchestrator",
+  "version": "0.1.0",
+  "description": "ZORO — AI coding orchestration system",
+  "main": "controller/pipeline/index.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "test:council": "jest tests/council --forceExit --verbose",
+    "start": "node cli.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 30000,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/benchmark/"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "node-fetch": "2.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

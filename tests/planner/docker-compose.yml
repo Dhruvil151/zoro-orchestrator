@@ -1,0 +1,7 @@
+services:
+  planner-test:
+    build:
+      context: ../..
+      dockerfile: tests/planner/Dockerfile
+    environment:
+      - NODE_ENV=test

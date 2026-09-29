@@ -1,0 +1,7 @@
+services:
+  council-test:
+    build:
+      context: ../..
+      dockerfile: tests/council/Dockerfile
+    environment:
+      - NODE_ENV=test

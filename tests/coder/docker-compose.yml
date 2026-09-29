@@ -1,0 +1,7 @@
+services:
+  coder-test:
+    build:
+      context: ../..
+      dockerfile: tests/coder/Dockerfile
+    environment:
+      - NODE_ENV=test

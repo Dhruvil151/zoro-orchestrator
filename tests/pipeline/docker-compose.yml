@@ -1,0 +1,7 @@
+services:
+  pipeline-test:
+    build:
+      context: ../..
+      dockerfile: tests/pipeline/Dockerfile
+    environment:
+      - NODE_ENV=test
